@@ -1,0 +1,88 @@
+/* Reset de default browser style */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --colorBlack:#000000;
+    --colorGray1:#444444;
+    --colorGray2:#707070;
+    --colorGray3:#AAAAAA;
+    --colorGray4:#F5F5F5;
+    --colorWhite:#FFFFFF;
+    --colorLightBlue:#2699FB;
+}
+
+body
+{
+    background-color: var(--colorGray4);
+}
+
+/* BEGIN VIDEO */
+#headerVideo {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+/* EINDE VIDEO */
+
+/* BEGIN HEADER */
+#headerContent{
+    text-align: center;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    font-family: Arial, sans-serif;
+    transform: translate(-50%, -50%);
+    color: var(--colorWhite);
+}
+
+#headerContent h1{
+    font-size: 4em;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#headerContent h2{
+    font-size: 2em;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+/* EINDE HEADER */
+
+/* BEGIN NAVIGATIEBAR */
+#naviBar
+{
+    text-align: center;
+    width: 100%;
+    border-bottom: var(--colorBlack) solid 0.1em;
+    z-index: 3;
+}
+
+#naviBar li
+{
+    display: inline-block;
+    padding: 2em 4em;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+#naviBar li a:hover
+{
+    color: var(--colorLightBlue);
+    border-bottom: var(--colorLightBlue) solid 0.2em;
+}
+
+#naviBar li a
+{
+    text-decoration: none;
+    color: var(--colorBlack);
+}
+/* EINDE NAVIGATIEBAR */
+
+/* BEGIN MAINCONTENT */
+
+
+
+/* EINDE MAINCONTENT */
