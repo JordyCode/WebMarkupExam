@@ -1,0 +1,4 @@
+Student Name: Jordy Beentjes
+Student Number: 648270
+Student Class: INF 1B
+URL Student Github Repo: https://github.com/JordyCode/WebMarkupExam
