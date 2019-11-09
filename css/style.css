@@ -5,17 +5,24 @@
 }
 
 :root {
-    --colorBlack:#000000;
-    --colorGray1:#444444;
-    --colorGray2:#707070;
-    --colorGray3:#AAAAAA;
-    --colorGray4:#F5F5F5;
-    --colorWhite:#FFFFFF;
-    --colorLightBlue:#2699FB;
+    --colorBlack: #000000;
+    --colorGray1: #444444;
+    --colorGray2: #707070;
+    --colorGray3: #AAAAAA;
+    --colorGray4: #F5F5F5;
+    --colorWhite: #FFFFFF;
+    --colorLightBlue: #2699FB;
 }
 
-body
-{
+@font-face {
+    font-family: "CaviarDreams";
+    src: url("../fonts/CaviarDreams.ttf");
+    src: url("../fonts/CaviarDreams_Bold.ttf");
+    src: url("../fonts/CaviarDreams_BoldItalic.ttf");
+    src: url("../fonts/CaviarDreams_Italic.ttf");
+}
+
+body {
     background-color: var(--colorGray4);
 }
 
@@ -25,64 +32,297 @@ body
     height: 100%;
     z-index: 0;
 }
+
 /* EINDE VIDEO */
 
 /* BEGIN HEADER */
-#headerContent{
+#headerContent {
     text-align: center;
     z-index: 1;
     top: 50%;
     left: 50%;
     position: absolute;
-    font-family: Arial, sans-serif;
+    font-family: "CaviarDreams", Arial, sans-serif, Verdana;
     transform: translate(-50%, -50%);
     color: var(--colorWhite);
 }
 
-#headerContent h1{
+#headerContent h1 {
     font-size: 4em;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-#headerContent h2{
+#headerContent h2 {
     font-size: 2em;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
+
 /* EINDE HEADER */
 
 /* BEGIN NAVIGATIEBAR */
-#naviBar
-{
+#naviBar {
     text-align: center;
     width: 100%;
     border-bottom: var(--colorBlack) solid 0.1em;
     z-index: 3;
 }
 
-#naviBar li
-{
+#naviBar li {
     display: inline-block;
     padding: 2em 4em;
-    font-family: Arial, sans-serif;
+    font-family: "CaviarDreams", Arial, sans-serif;
     font-size: 1em;
     font-weight: 700;
 }
 
-#naviBar li a:hover
-{
+#naviBar li a:hover {
     color: var(--colorLightBlue);
     border-bottom: var(--colorLightBlue) solid 0.2em;
 }
 
-#naviBar li a
-{
+#naviBar li a {
     text-decoration: none;
     color: var(--colorBlack);
 }
+
 /* EINDE NAVIGATIEBAR */
 
 /* BEGIN MAINCONTENT */
 
+#mainContent {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 65%;
+    padding: 0.5em 0;
+    font-family: "CaviarDreams", Arial, sans-serif, Verdana;
+}
 
+#main header {
+    margin-top: 2em;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2em;
+}
+
+#main header h2 {
+    font-family: "CaviarDreams", Arial, sans-serif, Verdana;
+    font-size: 4em;
+}
+
+#mainContent article h3 {
+    font-size: 2em;
+}
+
+#main header, footer {
+    grid-column: 1 / 4;
+}
+
+#mainContent article {
+    grid-column: 1 / 3;
+}
+
+#mainContent aside {
+    grid-column: span 1;
+}
+
+#mainContent aside img {
+    display: inline-block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+
+#mainContent footer {
+    text-align: left;
+}
+
+#mainContent footer a:hover {
+    border-bottom: var(--colorLightBlue) solid 0.2em;
+}
+
+#mainContent footer a {
+    text-decoration: none;
+    color: var(--colorLightBlue);
+}
+
+#mainContent p a {
+    text-decoration: none;
+    color: var(--colorLightBlue);
+}
+
+#mainContent p a:hover {
+    border-bottom: var(--colorLightBlue) solid 0.1em;
+}
+
+#mainContent p {
+    padding: 1% 0;
+    color: var(--colorBlack);
+}
 
 /* EINDE MAINCONTENT */
+
+/* BEGIN SECONDARYCONTENT */
+
+#secondaryContent {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 65%;
+    padding: 0.5em 0;
+    font-family: "CaviarDreams", Arial, sans-serif, Verdana;
+}
+
+#secondary {
+    background-color: var(--colorGray3);
+}
+
+#secondary header {
+    justify-content: center;
+    display: flex;
+}
+
+#secondary header h2 {
+    margin-top: 0.5em;
+    font-family: "CaviarDreams", Arial, sans-serif, Verdana;
+    font-size: 4em;
+}
+
+#secondaryContent article h3 {
+    font-size: 2em;
+}
+
+#secondary header, footer {
+    grid-column: 1 / 4;
+}
+
+#secondaryContent article {
+    grid-column: 1 / 3;
+}
+
+#secondaryContent aside {
+    grid-column: span 1;
+}
+
+.listSights {
+    margin-left: 1em;
+}
+
+.listSights li a {
+    text-decoration: none;
+    color: var(--colorLightBlue);
+}
+
+.listSights li a:hover {
+    border-bottom: var(--colorLightBlue) solid 0.2em;
+}
+
+#secondaryContent aside img {
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+
+#secondaryContent footer {
+    text-align: left;
+}
+
+#secondaryContent footer a:hover {
+    border-bottom: var(--colorLightBlue) solid 0.2em;
+}
+
+#secondaryContent footer a {
+    text-decoration: none;
+    color: var(--colorLightBlue);
+}
+
+#secondaryContent p a {
+    text-decoration: none;
+    color: var(--colorLightBlue);
+}
+
+#secondaryContent p a:hover {
+    border-bottom: var(--colorLightBlue) solid 0.1em;
+}
+
+#secondaryContent p {
+    padding: 1% 0;
+    color: var(--colorBlack);
+}
+
+#Sights {
+     margin-bottom: 2em;
+ }
+
+/* EINDE SECONDARYCONTENT */
+
+/* BEGIN SPORTCONTENT */
+
+#sportContent {
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: auto auto auto;
+    width: 75%;
+    font-family: "CaviarDreams", Arial, sans-serif, Verdana;
+}
+
+#sport h2 {
+    text-align: center;
+    font-family: "CaviarDreams", Arial, sans-serif, Verdana;
+    font-size: 6em;
+}
+
+.sportGrid img {
+    width: 100%;
+    height: 15em;
+    object-fit: cover;
+}
+.sportGrid img:hover {
+    transform: scale(1.1);
+}
+
+.sportGrid {
+    position: relative;
+    border: var(--colorGray4) solid;
+}
+
+.sportGrid h3 {
+    width: 100%;
+    color: var(--colorWhite);
+    padding: 1em;
+    top: 0;
+    position: absolute;
+}
+
+.sportGrid p {
+    width: 100%;
+    color: var(--colorWhite);
+    padding: 1em;
+    bottom: 0;
+    position: absolute;
+}
+
+.sportGrid a {
+    color: var(--colorWhite);
+}
+
+#sportContent footer {
+    text-align: left;
+}
+
+#sportContent footer a:hover {
+    border-bottom: var(--colorLightBlue) solid 0.2em;
+}
+
+#sportContent footer a {
+    text-decoration: none;
+    color: var(--colorLightBlue);
+}
+
+/* EINDE SPORTCONTENT */
+
+/* BEGIN REFERRAL */
+
+
+
+/* EINDE REFERRAL */
