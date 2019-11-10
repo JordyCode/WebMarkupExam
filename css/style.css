@@ -250,8 +250,8 @@ body {
 }
 
 #Sights {
-     margin-bottom: 2em;
- }
+    margin-bottom: 2em;
+}
 
 /* EINDE SECONDARYCONTENT */
 
@@ -269,14 +269,17 @@ body {
 #sport h2 {
     text-align: center;
     font-family: "CaviarDreams", Arial, sans-serif, Verdana;
-    font-size: 6em;
+    font-size: 4em;
+    margin-top: 0.4em;
+    margin-bottom: 0.7em;
 }
 
 .sportGrid img {
     width: 100%;
-    height: 15em;
+    height: 14em;
     object-fit: cover;
 }
+
 .sportGrid img:hover {
     transform: scale(1.1);
 }
@@ -323,6 +326,157 @@ body {
 
 /* BEGIN REFERRAL */
 
+#referralContent {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 65%;
+    padding: 0.5em 0;
+    font-family: "CaviarDreams", Arial, sans-serif, Verdana;
+}
 
+#referral {
+    background-color: var(--colorGray3);
+}
+
+#referral header {
+    justify-content: center;
+    display: flex;
+}
+
+#referral header h2 {
+    margin-top: 0.5em;
+    font-family: "CaviarDreams", Arial, sans-serif, Verdana;
+    font-size: 4em;
+}
+
+#referralContent article h3 {
+    font-size: 2em;
+}
+
+#referral header, footer {
+    grid-column: 1 / 4;
+}
+
+#referralContent article {
+    grid-column: 1 / 3;
+}
+
+#referralContent aside {
+    grid-column: span 1;
+}
+
+#referralContent aside img {
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+#referralContent footer {
+    text-align: left;
+}
+
+#referralContent footer a:hover {
+    border-bottom: var(--colorLightBlue) solid 0.2em;
+}
+
+#referralContent footer a {
+    text-decoration: none;
+    color: var(--colorLightBlue);
+}
+
+#referralContent p a {
+    text-decoration: none;
+    color: var(--colorLightBlue);
+}
+
+#referralContent p a:hover {
+    border-bottom: var(--colorLightBlue) solid 0.1em;
+}
+
+#referralContent p {
+    padding: 1% 0;
+    color: var(--colorBlack);
+}
 
 /* EINDE REFERRAL */
+
+/* BEGIN CONTACT */
+
+#contact {
+    position: center;
+    padding: 0.5em 0;
+    font-family: "CaviarDreams", Arial, sans-serif, Verdana;
+}
+
+#contact header h2 {
+    margin-top: 0.5em;
+    font-family: "CaviarDreams", Arial, sans-serif, Verdana;
+    font-size: 4em;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin-top: 0.7em;
+    margin-right: 4em;
+}
+
+#contact input[type=text], input[type=email] {
+    margin-left: 5em;
+}
+
+#contact fieldset {
+    width: 5%;
+    margin: 0 auto;
+    padding: 2.5em;
+}
+
+#contact textarea {
+    width: 74%;
+    margin-left: 4.9em;
+}
+
+#contact input[type=Submit] {
+    margin-top: 1em;
+    border: none;
+    background-color: var(--colorGray3);
+    padding: 1em 2em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* EINDE CONTACT */
+
+/* BEGIN FOOTER */
+
+#copyright {
+    background-color: var(--colorLightBlue);
+    font-family: "CaviarDreams", Arial, sans-serif, Verdana;
+    height: 3em;
+}
+
+/* EINDE FOOTER */
+
+/* BEGIN COOKIES */
+
+#cookies {
+    background-color: rgba(70, 70, 70, 0.8);
+    padding: 0.2%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#cookies p {
+    font-family: "CaviarDreams", Arial, sans-serif, Verdana;
+    color: var(--colorWhite);
+    font-size: 1em;
+}
+
+/* EINDE COOKIES */
