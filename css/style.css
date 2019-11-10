@@ -440,7 +440,7 @@ body {
     margin-left: 4.9em;
 }
 
-#contact input[type=Submit] {
+#contact button {
     margin-top: 1em;
     border: none;
     background-color: var(--colorGray3);
